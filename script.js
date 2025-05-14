@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // CONFIGURA QUI LE TUE CREDENZIALI SUPABASE!
-    const SUPABASE_URL = 'IL_TUO_URL_SUPABASE'; // Sostituisci con il tuo URL Supabase
-    const SUPABASE_ANON_KEY = 'LA_TUA_CHIAVE_ANON_SUPABASE'; // Sostituisci con la tua chiave anon Supabase
+    const SUPABASE_URL = 'https://zqfkjxufmbgjllbwvmdp.supabase.co'; // Sostituisci con il tuo URL Supabase
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpxZmtqeHVmbWJnamxsYnd2bWRwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyMjY2NzYsImV4cCI6MjA2MjgwMjY3Nn0.cOnQA0CS4xEB8piVKUjpPkQPzdrrVRF2zN9dA1RsxO0'; // Sostituisci con la tua chiave anon Supabase
 
-    if (SUPABASE_URL === 'IL_TUO_URL_SUPABASE' || SUPABASE_ANON_KEY === 'LA_TUA_CHIAVE_ANON_SUPABASE') {
+    if (SUPABASE_URL === 'https://zqfkjxufmbgjllbwvmdp.supabase.co' || SUPABASE_ANON_KEY === 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpxZmtqeHVmbWJnamxsYnd2bWRwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyMjY2NzYsImV4cCI6MjA2MjgwMjY3Nn0.cOnQA0CS4xEB8piVKUjpPkQPzdrrVRF2zN9dA1RsxO0') {
         alert('ERRORE: Configura le tue credenziali Supabase in script.js!');
         // Disabilita il form e altre interazioni se non configurato
         document.getElementById('contactForm').style.pointerEvents = 'none';
