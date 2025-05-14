@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrica Contatti Avanzata</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rubrica Contatti</h1>
+            <p>Gestisci i tuoi contatti con Supabase e GitHub Pages</p>
+        </header>
+
+        <div class="form-section glass-effect">
+            <h2><span id="form-title">Aggiungi</span> Contatto</h2>
+            <form id="contactForm">
+                <input type="hidden" id="contactId">
+
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefono:</label>
+                    <input type="tel" id="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Indirizzo:</label>
+                    <textarea id="address" rows="3"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="saveBtn" class="btn btn-primary">Salva</button>
+                    <button type="button" id="clearBtn" class="btn btn-secondary" style="display:none;">Annulla</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="search-section glass-effect">
+            <h2>Cerca Contatti</h2>
+            <input type="text" id="searchInput" placeholder="Cerca per nome, email o telefono...">
+        </div>
+
+        <div class="contacts-section">
+            <h2>Elenco Contatti</h2>
+            <div id="loadingMessage" style="display: none;">Caricamento contatti...</div>
+            <ul id="contactList">
+                </ul>
+            <p id="noContactsMessage" style="display: none;">Nessun contatto presente o trovato.</p>
+        </div>
+
+        <footer>
+            <p>App Rubrica &copy; 2024-2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
